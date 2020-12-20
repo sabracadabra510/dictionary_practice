@@ -18,13 +18,21 @@
 
 # print(f"You have the most children out of everyone, with a total of {most_children}, wow!")
 
-favorite_foods = {
-    'Jenny':'pizza',
-    'Justin':'pasta',
-    'Dominic':'Indian food',
-    'Shannon':'steak',
-    'Dad':'chicken',
-}
+# favorite_foods = {
+#     'Jenny':'pizza',
+#     'Justin':'pasta',
+#     'Dominic':'Indian food',
+#     'Shannon':'steak',
+#     'Dad':'chicken',
+# }
 
-food = favorite_foods['Dad']
-print(f"The favorite food of Dad is {food}.")
+# food = favorite_foods['Dad']
+# print(f"The favorite food of Dad is {food}.")
+
+
+best_friend = {
+    'Tigger': 'Oakland',
+    'Elmo' : 'San Franciso',
+    'Barney' : 'Pleasanton',
+
+}
