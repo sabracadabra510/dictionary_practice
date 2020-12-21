@@ -36,3 +36,30 @@ best_friend = {
     'Barney' : 'Pleasanton',
 
 }
+
+print(best_friend['Tigger'])
+
+sister = {
+    'first_name' : 'Jenny',
+    'last_name' : 'Yee',
+    'city' : 'Oakland',
+}
+
+print(sister['first_name'])
+print(sister['last_name'])
+print(sister['city'])
+
+
+favorite_numbers = {
+    'Justin' : 15,
+    'Shannon' :22,
+    'Elvis' : 12,
+    'Savannah' : 2, 
+}
+Shannon = favorite_numbers['Shannon']
+Savannah = favorite_numbers['Savannah']
+Justin = favorite_numbers['Justin']
+print(f'The favorite number of Shannon is {Shannon}')
+print(f'The favorite number of Savannah is {Savannah}')
+print(f'The favoite number of Justin is {Justin}')
+
