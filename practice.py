@@ -63,3 +63,15 @@ print(f'The favorite number of Shannon is {Shannon}')
 print(f'The favorite number of Savannah is {Savannah}')
 print(f'The favoite number of Justin is {Justin}')
 
+for key, value in favorite_numbers.items():
+    print(key)
+    print(value)
+
+for number in favorite_numbers.keys():
+    print(number)
+
+for name in favorite_numbers.keys():
+    print(name)
+
+for value in favorite_numbers.values():
+    print(value)
