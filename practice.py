@@ -96,30 +96,52 @@
 # for country in rivers.values():
 #     print(country)
 
-alien_0 = {'color': 'green','points':5}
-alien_1 = {'color': 'yellow', 'points' : 10}
-alien_2 = {'color': 'red', 'points': 15}
+# alien_0 = {'color': 'green','points':5}
+# alien_1 = {'color': 'yellow', 'points' : 10}
+# alien_2 = {'color': 'red', 'points': 15}
 
-aliens = [alien_0, alien_1, alien_2]
+# aliens = [alien_0, alien_1, alien_2]
 
-for alien in aliens:
-    print(alien)
+# for alien in aliens:
+#     print(alien)
 
-alients = []
-for alien_number in range(30):
-    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
-    aliens.append(new_alien)
+# alients = []
+# for alien_number in range(30):
+#     new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+#     aliens.append(new_alien)
 
-for alien in aliens [:5]:
-    print(alien)
-    print(f'Total number of aliens: {len(aliens)}')
+# for alien in aliens [:5]:
+#     print(alien)
+#     print(f'Total number of aliens: {len(aliens)}')
 
-for alien in aliens [:10]:
-    if alien['color'] == 'green':
-        aliens['color'] = 'purple'
-        aliens['points'] = 22
-        aliens['speed'] = 'fast'
-    elif alien['color'] == 'yellow':
-        aliens['color'] = 'red'
-        aliens['points'] = 16
-        aliens['speed'] = 'slow'
+# for alien in aliens [:10]:
+#     if alien['color'] == 'green':
+#         aliens['color'] = 'purple'
+#         aliens['points'] = 22
+#         aliens['speed'] = 'fast'
+#     elif alien['color'] == 'yellow':
+#         aliens['color'] = 'red'
+#         aliens['points'] = 16
+#         aliens['speed'] = 'slow'
+
+users = {
+    'aeinstein' : {
+        'first': 'albert',
+        'last' : 'einstein',
+        'location': 'princeton',
+    },
+
+    'mcurie' :{
+        'first': 'marie', 
+        'last' :' curie', 
+        'location': 'paris',
+    },
+}
+
+for username, user_info in users.items():
+    print(username)
+    full_name = f"{user_info['first']} {user_info['last']}"
+    location = user_info['location']
+
+    print(full_name)
+    print(location)
