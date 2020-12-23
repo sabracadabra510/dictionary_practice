@@ -30,48 +30,96 @@
 # print(f"The favorite food of Dad is {food}.")
 
 
-best_friend = {
-    'Tigger': 'Oakland',
-    'Elmo' : 'San Franciso',
-    'Barney' : 'Pleasanton',
+# best_friend = {
+#     'Tigger': 'Oakland',
+#     'Elmo' : 'San Franciso',
+#     'Barney' : 'Pleasanton',
 
-}
+# }
 
-print(best_friend['Tigger'])
+# print(best_friend['Tigger'])
 
-sister = {
-    'first_name' : 'Jenny',
-    'last_name' : 'Yee',
-    'city' : 'Oakland',
-}
+# sister = {
+#     'first_name' : 'Jenny',
+#     'last_name' : 'Yee',
+#     'city' : 'Oakland',
+# }
 
-print(sister['first_name'])
-print(sister['last_name'])
-print(sister['city'])
+# print(sister['first_name'])
+# print(sister['last_name'])
+# print(sister['city'])
 
 
-favorite_numbers = {
-    'Justin' : 15,
-    'Shannon' :22,
-    'Elvis' : 12,
-    'Savannah' : 2, 
-}
-Shannon = favorite_numbers['Shannon']
-Savannah = favorite_numbers['Savannah']
-Justin = favorite_numbers['Justin']
-print(f'The favorite number of Shannon is {Shannon}')
-print(f'The favorite number of Savannah is {Savannah}')
-print(f'The favoite number of Justin is {Justin}')
+# favorite_numbers = {
+#     'Justin' : 15,
+#     'Shannon' :22,
+#     'Elvis' : 12,
+#     'Savannah' : 2, 
+# }
+# Shannon = favorite_numbers['Shannon']
+# Savannah = favorite_numbers['Savannah']
+# Justin = favorite_numbers['Justin']
+# print(f'The favorite number of Shannon is {Shannon}')
+# print(f'The favorite number of Savannah is {Savannah}')
+# print(f'The favoite number of Justin is {Justin}')
 
-for key, value in favorite_numbers.items():
-    print(key)
-    print(value)
+# for key, value in favorite_numbers.items():
+#     print(key)
+#     print(value)
 
-for number in favorite_numbers.keys():
-    print(number)
+# for number in favorite_numbers.keys():
+#     print(number)
 
-for name in favorite_numbers.keys():
-    print(name)
+# for name in favorite_numbers.keys():
+#     print(name)
 
-for value in favorite_numbers.values():
-    print(value)
+# for value in favorite_numbers.values():
+#     print(value)
+
+# rivers = {
+#     'Mississippi': 'United States',
+#     'Sacramento' : 'United States', 
+#     'Nile' : 'Egypt', 
+#     'Jordan' : 'Africa', 
+# }
+
+# for country in rivers.values():
+#     print(country)
+
+# for key, value in rivers.items():
+#     print(key)
+#     print(value)
+
+# for key in rivers:
+#     print(key)
+
+# for country in rivers.values():
+#     print(country)
+
+alien_0 = {'color': 'green','points':5}
+alien_1 = {'color': 'yellow', 'points' : 10}
+alien_2 = {'color': 'red', 'points': 15}
+
+aliens = [alien_0, alien_1, alien_2]
+
+for alien in aliens:
+    print(alien)
+
+alients = []
+for alien_number in range(30):
+    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+    aliens.append(new_alien)
+
+for alien in aliens [:5]:
+    print(alien)
+    print(f'Total number of aliens: {len(aliens)}')
+
+for alien in aliens [:10]:
+    if alien['color'] == 'green':
+        aliens['color'] = 'purple'
+        aliens['points'] = 22
+        aliens['speed'] = 'fast'
+    elif alien['color'] == 'yellow':
+        aliens['color'] = 'red'
+        aliens['points'] = 16
+        aliens['speed'] = 'slow'
