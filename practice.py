@@ -124,24 +124,53 @@
 #         aliens['points'] = 16
 #         aliens['speed'] = 'slow'
 
-users = {
-    'aeinstein' : {
-        'first': 'albert',
-        'last' : 'einstein',
-        'location': 'princeton',
-    },
+# users = {
+#     'aeinstein' : {
+#         'first': 'albert',
+#         'last' : 'einstein',
+#         'location': 'princeton',
+#     },
 
-    'mcurie' :{
-        'first': 'marie', 
-        'last' :' curie', 
-        'location': 'paris',
-    },
+#     'mcurie' :{
+#         'first': 'marie', 
+#         'last' :' curie', 
+#         'location': 'paris',
+#     },
+# }
+
+# for username, user_info in users.items():
+#     print(username)
+#     full_name = f"{user_info['first']} {user_info['last']}"
+#     location = user_info['location']
+
+#     print(full_name)
+#     print(location)
+
+
+families = {
+    'Porter' : {
+        'Justin' : 'Dad',
+        'Michelle' : 'Mom', 
+        'Laila' : 'Daughter', 
+        'Cora' : 'Sister', 
+        'Savannah' : 'Daughter',
+    }, 
+
+    'Wells' : {
+        'Shannon' : 'Dad',
+        'Kristen' : 'Mom', 
+        'Jaden' :'Son', 
+        'Natalia': 'Daughter', 
+        'Niko' :'Son', 
+    }, 
+
+    'Yee' : {
+        'Warren': 'Husband', 
+        'Jennifer' : 'Wife', 
+    
+    }, 
 }
 
-for username, user_info in users.items():
-    print(username)
-    full_name = f"{user_info['first']} {user_info['last']}"
-    location = user_info['location']
-
-    print(full_name)
-    print(location)
+for family, name in families.items():
+    print(name)
+    
