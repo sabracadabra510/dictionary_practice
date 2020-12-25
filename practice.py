@@ -174,3 +174,13 @@ families = {
 for family, name in families.items():
     print(name)
     
+
+for family in families.values():
+    print(family)
+
+for family, title in families.items():
+    print(family)
+    print(title)
+
+for family in families:
+    print(family)
