@@ -147,40 +147,48 @@
 #     print(location)
 
 
-families = {
-    'Porter' : {
-        'Justin' : 'Dad',
-        'Michelle' : 'Mom', 
-        'Laila' : 'Daughter', 
-        'Cora' : 'Sister', 
-        'Savannah' : 'Daughter',
-    }, 
+# families = {
+#     'Porter' : {
+#         'Justin' : 'Dad',
+#         'Michelle' : 'Mom', 
+#         'Laila' : 'Daughter', 
+#         'Cora' : 'Sister', 
+#         'Savannah' : 'Daughter',
+#     }, 
 
-    'Wells' : {
-        'Shannon' : 'Dad',
-        'Kristen' : 'Mom', 
-        'Jaden' :'Son', 
-        'Natalia': 'Daughter', 
-        'Niko' :'Son', 
-    }, 
+#     'Wells' : {
+#         'Shannon' : 'Dad',
+#         'Kristen' : 'Mom', 
+#         'Jaden' :'Son', 
+#         'Natalia': 'Daughter', 
+#         'Niko' :'Son', 
+#     }, 
 
-    'Yee' : {
-        'Warren': 'Husband', 
-        'Jennifer' : 'Wife', 
+#     'Yee' : {
+#         'Warren': 'Husband', 
+#         'Jennifer' : 'Wife', 
     
-    }, 
+#     }, 
+# }
+
+# for family, name in families.items():
+#     print(name)
+    
+
+# for family in families.values():
+#     print(family)
+
+# for family, title in families.items():
+#     print(family)
+#     print(title)
+
+# for family in families:
+#     print(family)
+
+
+holidays = {
+    'Christmas' : 'December', 
+    'Thanksgiving' :'November', 
+    'Halloween' : 'October', 
+    'Labor Day' : 'September'
 }
-
-for family, name in families.items():
-    print(name)
-    
-
-for family in families.values():
-    print(family)
-
-for family, title in families.items():
-    print(family)
-    print(title)
-
-for family in families:
-    print(family)
