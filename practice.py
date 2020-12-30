@@ -186,9 +186,27 @@
 #     print(family)
 
 
-holidays = {
-    'Christmas' : 'December', 
-    'Thanksgiving' :'November', 
-    'Halloween' : 'October', 
-    'Labor Day' : 'September'
-}
+# holidays = {
+#     'Christmas' : 'December', 
+#     'Thanksgiving' :'November', 
+#     'Halloween' : 'October', 
+#     'Labor Day' : 'September'
+# }
+
+dogs = ['Lucky', 'Princeton', 'Bruiser', 'Potato', 'Harlem', 'Georgie', 'Baloo', 'Lucky']
+
+for dog in dogs: 
+    print(dog)
+
+dogs = set(dogs)
+
+if 'Potato' in dogs:
+    print("yes!")
+
+if 'Ravi' in dogs:
+    print('Yes!')
+
+else:
+    print("I don't see him here!")
+
+print(dogs)
