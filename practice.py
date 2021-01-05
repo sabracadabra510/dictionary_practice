@@ -203,30 +203,36 @@
 # if 'Potato' in dogs:
 #     print("yes!")
 
-# if 'Ravi' in dogs:
-#     print('Yes!')
+# # if 'Ravi' in dogs:
+# #     print('Yes!')
 
-# else:
-#     print("I don't see him here!")
+# # else:
+# #     print("I don't see him here!")
 
-# print(dogs)
+# # print(dogs)
 
 
-class Niece:
-    """A simple to attempt to classify my crazy nieces"""
+# class Niece:
+#     """A simple to attempt to classify my crazy nieces"""
     
-    def __init__(self, name, age):
-        """initialize name and age attributes"""
-        self.name = name
-        self.age = age
+#     def __init__(self, name, age):
+#         """initialize name and age attributes"""
+#         self.name = name
+#         self.age = age
 
-    def sing(self):
-       """Simulate niece singing"""
-    # print(f"{self.name} is now singing.")
+#     def sing(self):
+#        """Simulate niece singing"""
+#     # print(f"{self.name} is now singing.")
 
-    def dance(self):
-        """Simulate niece dancing"""
-        # print(f"{self.name} is now dancing.")
+#     def dance(self):
+#         """Simulate niece dancing"""
+#         # print(f"{self.name} is now dancing.")
 
-        eldest_niece = Niece('Laila', 6)
-        print(f"My niece's name is {eldest_niece.name} and she is {eldest.niece.age} years old.")
+#         eldest_niece = Niece('Laila', 6)
+#         print(f"My niece's name is {eldest_niece.name} and she is {eldest.niece.age} years old.")
+
+
+toys = ['Daniel_Tiger', 'Unicorns', 'Dolls', 'Shoes', 'Dresses']
+
+for toy in toys:
+    print(toy)
