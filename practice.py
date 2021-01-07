@@ -232,7 +232,17 @@
 #         print(f"My niece's name is {eldest_niece.name} and she is {eldest.niece.age} years old.")
 
 
-toys = ['Daniel_Tiger', 'Unicorns', 'Dolls', 'Shoes', 'Dresses']
+# toys = ['Daniel_Tiger', 'Unicorns', 'Dolls', 'Shoes', 'Dresses']
 
-for toy in toys:
-    print(toy)
+# for toy in toys:
+#     print(toy)
+
+furniture = {
+    'chair': 'kitchen',
+    'bed': 'bedroom',
+    'couch': 'living_room',
+    'coffee_table' : 'family_room'
+}
+
+for furniture in furniture.keys():
+    print(furniture)
