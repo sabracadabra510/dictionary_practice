@@ -237,12 +237,39 @@
 # for toy in toys:
 #     print(toy)
 
-furniture = {
-    'chair': 'kitchen',
-    'bed': 'bedroom',
-    'couch': 'living_room',
-    'coffee_table' : 'family_room'
-}
+# furniture = {
+#     'chair': 'kitchen',
+#     'bed': 'bedroom',
+#     'couch': 'living_room',
+#     'coffee_table' : 'family_room'
+# }
 
-for furniture in furniture.keys():
-    print(furniture)
+# for furniture in furniture.keys():
+#     print(furniture)
+
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+            return False
+        
+        if s == "" and t == "":
+            return True
+        
+        my_dict = {}
+        
+        for letter in s:
+            my_dict[letter] = my_dict.get(letter,0)+1
+            
+        for letter in t:
+            if letter in my_dict:
+                my_dict[letter]=my_dict.get(letter,0)-1
+            else:
+                return False
+            
+        for value in my_dict.values():
+            if value != 0:
+                return False 
+            
+        return True
+
+    isAnangram('cookies','okoceis')
