@@ -247,29 +247,42 @@
 # for furniture in furniture.keys():
 #     print(furniture)
 
-class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
-        if len(s) != len(t):
-            return False
+# class Solution:
+    # def isAnagram(self, s: str, t: str) -> bool:
+    #     if len(s) != len(t):
+    #         return False
         
-        if s == "" and t == "":
-            return True
+    #     if s == "" and t == "":
+    #         return True
         
-        my_dict = {}
+    #     my_dict = {}
         
-        for letter in s:
-            my_dict[letter] = my_dict.get(letter,0)+1
+    #     for letter in s:
+    #         my_dict[letter] = my_dict.get(letter,0)+1
             
-        for letter in t:
-            if letter in my_dict:
-                my_dict[letter]=my_dict.get(letter,0)-1
-            else:
-                return False
+    #     for letter in t:
+    #         if letter in my_dict:
+    #             my_dict[letter]=my_dict.get(letter,0)-1
+    #         else:
+    #             return False
             
-        for value in my_dict.values():
-            if value != 0:
-                return False 
+    #     for value in my_dict.values():
+    #         if value != 0:
+    #             return False 
             
-        return True
+    #     return True
 
-    isAnangram('cookies','okoceis')
+    # isAnangram('cookies','okoceis')
+
+groceries ={
+        'milk': 4,
+        'cheese': 1,
+        'bread':2, 
+        'meat':1,
+    }
+
+for key, value in groceries.items():
+    print(key, value)
+    
+        
+    
