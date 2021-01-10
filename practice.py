@@ -274,15 +274,32 @@
 
     # isAnangram('cookies','okoceis')
 
-groceries ={
-        'milk': 4,
-        'cheese': 1,
-        'bread':2, 
-        'meat':1,
-    }
+# groceries ={
+#         'milk': 4,
+#         'cheese': 1,
+#         'bread':2, 
+#         'meat':1,
+#     }
 
-for key, value in groceries.items():
-    print(key, value)
+# for key, value in groceries.items():
+#     print(key, value)
     
-        
+ def number_needed(a, b):
+    pass
+
+    t = {}
+    for c in a:
+        if c not in t:
+            t[c] = 0
+        t[c] += 1
+
+    for c in b:
+        if c not in t:
+            t[c] = 0
+        t[c] -= 1
+
+    total = 0
+    for key, val in t.items():
+        total += abs(val)
+    print(total)       
     
