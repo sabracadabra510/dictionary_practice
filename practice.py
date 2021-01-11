@@ -284,23 +284,30 @@
 # for key, value in groceries.items():
 #     print(key, value)
     
- def number_needed(a, b):
+#  def number_needed(a, b):
     
 
-    t = {}
-    for c in a:
-        if c not in t:
-            t[c] = 0
-        t[c] += 1
+#     t = {}
+#     for c in a:
+#         if c not in t:
+#             t[c] = 0
+#         t[c] += 1
 
-    for c in b:
-        if c not in t:
-            t[c] = 0
-        t[c] -= 1
+#     for c in b:
+#         if c not in t:
+#             t[c] = 0
+#         t[c] -= 1
 
-    total = 0
+#     total = 0
     
-    for key, val in t.items():
-        total += abs(val)
-    print(total)       
+#     for key, val in t.items():
+#         total += abs(val)
+#     print(total)       
     
+
+fish = {
+...    "anglerfish": "deep ocean",
+...    "candiru": "amazon river",
+...    "trout": "shallow river",
+...    "bass": "lake"
+... }
