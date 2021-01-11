@@ -285,7 +285,7 @@
 #     print(key, value)
     
  def number_needed(a, b):
-    pass
+    
 
     t = {}
     for c in a:
@@ -299,6 +299,7 @@
         t[c] -= 1
 
     total = 0
+    
     for key, val in t.items():
         total += abs(val)
     print(total)       
