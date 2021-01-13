@@ -305,9 +305,24 @@
 #     print(total)       
     
 
-fish = {
-...    "anglerfish": "deep ocean",
-...    "candiru": "amazon river",
-...    "trout": "shallow river",
-...    "bass": "lake"
+# fish = {
+# ...    "anglerfish": "deep ocean",
+# ...    "candiru": "amazon river",
+# ...    "trout": "shallow river",
+# ...    "bass": "lake"
 ... }
+
+for i in range(1,len(s)):
+    # window start to window end
+        for j in range(0,len(s)-i+1): # 4 - 1 + 1 = [0,1,2,3] -> values of j
+
+            s1 = "".join(sorted(s[j:j+i])) # s[0:1]
+        # if 'k' not in d
+        if s1 not in d:
+            d[s1] = 0
+        d[s1] += 1
+        # d = { 'k' : 1 }
+
+    for i in d.values():
+        total += sum(range(i)) # how many combinations you can make given a certain number of elements
+        return total
