@@ -310,19 +310,45 @@
 # ...    "candiru": "amazon river",
 # ...    "trout": "shallow river",
 # ...    "bass": "lake"
-... }
+# ... }
 
-for i in range(1,len(s)):
-    # window start to window end
-        for j in range(0,len(s)-i+1): # 4 - 1 + 1 = [0,1,2,3] -> values of j
+# for i in range(1,len(s)):
+#     # window start to window end
+#         for j in range(0,len(s)-i+1): # 4 - 1 + 1 = [0,1,2,3] -> values of j
 
-            s1 = "".join(sorted(s[j:j+i])) # s[0:1]
-        # if 'k' not in d
-        if s1 not in d:
-            d[s1] = 0
-        d[s1] += 1
-        # d = { 'k' : 1 }
+#             s1 = "".join(sorted(s[j:j+i])) # s[0:1]
+#         # if 'k' not in d
+#         if s1 not in d:
+#             d[s1] = 0
+#         d[s1] += 1
+#         # d = { 'k' : 1 }
 
-    for i in d.values():
-        total += sum(range(i)) # how many combinations you can make given a certain number of elements
-        return total
+#     for i in d.values():
+#         total += sum(range(i)) # how many combinations you can make given a certain number of elements
+#         return total
+
+
+arr, r = [1, 5, 5, 25, 125], 5
+
+
+
+pairs = dict()
+singles = dict()
+total = 0
+for vertex in arr:
+    if vertex in pairs: # we have pairs of numbers, waiting for a third (to complete the triplet),
+                        # and we got the third
+        total += pairs[vertex]
+    if vertex in singles: # we have a single number waiting for a second number to make a pair
+                          # and we got that second number
+        if vertex * r not in pairs:
+            pairs[vertex * r] = 0
+        pairs[vertex * r] += singles[vertex]
+    if vertex * r not in singles:
+        singles[vertex * r] = 0
+    singles[vertex * r] += 1
+
+print('arr:', arr)
+print('pairs:', pairs)
+print('singles:', singles)
+print(total)
