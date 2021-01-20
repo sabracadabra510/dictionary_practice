@@ -328,27 +328,46 @@
 #         return total
 
 
-arr, r = [1, 5, 5, 25, 125], 5
+# arr, r = [1, 5, 5, 25, 125], 5
 
 
 
-pairs = dict()
-singles = dict()
-total = 0
-for vertex in arr:
-    if vertex in pairs: # we have pairs of numbers, waiting for a third (to complete the triplet),
-                        # and we got the third
-        total += pairs[vertex]
-    if vertex in singles: # we have a single number waiting for a second number to make a pair
-                          # and we got that second number
-        if vertex * r not in pairs:
-            pairs[vertex * r] = 0
-        pairs[vertex * r] += singles[vertex]
-    if vertex * r not in singles:
-        singles[vertex * r] = 0
-    singles[vertex * r] += 1
+# pairs = dict()
+# singles = dict()
+# total = 0
+# for vertex in arr:
+#     if vertex in pairs: # we have pairs of numbers, waiting for a third (to complete the triplet),
+#                         # and we got the third
+#         total += pairs[vertex]
+#     if vertex in singles: # we have a single number waiting for a second number to make a pair
+#                           # and we got that second number
+#         if vertex * r not in pairs:
+#             pairs[vertex * r] = 0
+#         pairs[vertex * r] += singles[vertex]
+#     if vertex * r not in singles:
+#         singles[vertex * r] = 0
+#     singles[vertex * r] += 1
 
-print('arr:', arr)
-print('pairs:', pairs)
-print('singles:', singles)
-print(total)
+# print('arr:', arr)
+# print('pairs:', pairs)
+# print('singles:', singles)
+# print(total)
+
+neighbors = {
+    'Peter' : 8,
+    'John': 11, 
+    'Christian': 14, 
+    'Jenny': 22, 
+    'Warren': 22, 
+    'Kendall' : 17, 
+    'Veronica' : 1,
+}
+
+for key, value in neighbors.items():
+    print(key,value)
+
+for key in neighbors.keys():
+    print(key)
+
+for value in neighbors.values():
+    print(value)
