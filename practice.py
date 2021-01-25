@@ -353,21 +353,59 @@
 # print('singles:', singles)
 # print(total)
 
-neighbors = {
-    'Peter' : 8,
-    'John': 11, 
-    'Christian': 14, 
-    'Jenny': 22, 
-    'Warren': 22, 
-    'Kendall' : 17, 
-    'Veronica' : 1,
-}
+# neighbors = {
+#     'Peter' : 8,
+#     'John': 11, 
+#     'Christian': 14, 
+#     'Jenny': 22, 
+#     'Warren': 22, 
+#     'Kendall' : 17, 
+#     'Veronica' : 1,
+# }
 
-for key, value in neighbors.items():
-    print(key,value)
+# for key, value in neighbors.items():
+#     print(key,value)
 
-for key in neighbors.keys():
-    print(key)
+# for key in neighbors.keys():
+#     print(key)
 
-for value in neighbors.values():
-    print(value)
+# for value in neighbors.values():
+#     print(value)
+
+x1=0
+y1=0
+x2=5280
+y2=300
+x3=10560
+y3=1175
+[[x1,y1],[x2,y2],[x3,y3]]
+
+input =[[x1,y1],[x2,y2],[x3,y3]]
+
+def get_slopes(elevation_points):
+    current_index=0
+    slopes = []
+    for point in elevation_points:
+        if current_index +1 >= len(elevation_points):
+            print("End of points!")
+        else:
+            print(current_index) 
+            print(len(elevation_points))   
+            print(point)
+            next_point = elevation_points[current_index+1]
+            print(next_point)
+            x1, y1 = point
+            x2, y2 = next_point 
+            print(x1,y1)
+            print(x2,y2)
+            current_index = current_index +1
+            print("")
+
+            slope = (y2-y1)/(x2-x1)
+            slopes.append(slope)
+            average = sum(slopes) / len(slopes)
+            print(average)
+        print(slopes)
+    # return slope
+
+get_slopes(input)
