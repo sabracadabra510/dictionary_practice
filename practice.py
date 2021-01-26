@@ -372,40 +372,55 @@
 # for value in neighbors.values():
 #     print(value)
 
-x1=0
-y1=0
-x2=5280
-y2=300
-x3=10560
-y3=1175
-[[x1,y1],[x2,y2],[x3,y3]]
+# x1=0
+# y1=0
+# x2=5280
+# y2=300
+# x3=10560
+# y3=1175
+# [[x1,y1],[x2,y2],[x3,y3]]
 
-input =[[x1,y1],[x2,y2],[x3,y3]]
+# input =[[x1,y1],[x2,y2],[x3,y3]]
 
-def get_slopes(elevation_points):
-    current_index=0
-    slopes = []
-    for point in elevation_points:
-        if current_index +1 >= len(elevation_points):
-            print("End of points!")
+# def get_slopes(elevation_points):
+#     current_index=0
+#     slopes = []
+#     for point in elevation_points:
+#         if current_index +1 >= len(elevation_points):
+#             print("End of points!")
+#         else:
+#             print(current_index) 
+#             print(len(elevation_points))   
+#             print(point)
+#             next_point = elevation_points[current_index+1]
+#             print(next_point)
+#             x1, y1 = point
+#             x2, y2 = next_point 
+#             print(x1,y1)
+#             print(x2,y2)
+#             current_index = current_index +1
+#             print("")
+
+#             slope = (y2-y1)/(x2-x1)
+#             slopes.append(slope)
+#             average = sum(slopes) / len(slopes)
+#             print(average)
+#         print(slopes)
+#     # return slope
+
+# get_slopes(input)
+
+def missing_number(nums):
+    linear = []
+    non_linear = []
+    previous_num = 0
+    for num in nums: 
+        if nums[num] = previous_num +1:
+            linear.append(num)
+            previous_num +=1 
         else:
-            print(current_index) 
-            print(len(elevation_points))   
-            print(point)
-            next_point = elevation_points[current_index+1]
-            print(next_point)
-            x1, y1 = point
-            x2, y2 = next_point 
-            print(x1,y1)
-            print(x2,y2)
-            current_index = current_index +1
-            print("")
+            non_linear.append(num)
 
-            slope = (y2-y1)/(x2-x1)
-            slopes.append(slope)
-            average = sum(slopes) / len(slopes)
-            print(average)
-        print(slopes)
-    # return slope
+    return non_linear[0]
 
-get_slopes(input)
+print(missing_number([1,2,3,5,6,7,8]))
