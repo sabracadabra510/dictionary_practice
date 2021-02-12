@@ -425,24 +425,38 @@
 
 # print(missing_number([1,2,3,5,6,7,8]))
 
-def is_first_come_first_served(take_out_orders, dine_in_orders, served_orders):
+# def is_first_come_first_served(take_out_orders, dine_in_orders, served_orders):
 
-    take_out_orders_index =0
-    dine_in_orders_index = 0
-    take_out_orders_max_index = len(take_out_orders) -1
-    dine_in_orders_max_index = len(dine_in_orders) - 1
+#     take_out_orders_index =0
+#     dine_in_orders_index = 0
+#     take_out_orders_max_index = len(take_out_orders) -1
+#     dine_in_orders_max_index = len(dine_in_orders) - 1
     
-    for order in served_orders:
-        if take_out_orders_index <= take_out_orders_max_index and order == take_out_orders[take_out_orders_index]:
-            take_out_orders +=1
+#     for order in served_orders:
+#         if take_out_orders_index <= take_out_orders_max_index and order == take_out_orders[take_out_orders_index]:
+#             take_out_orders +=1
             
-        elif dine_in_orders_index <= dine_in_orders_max_index and order == dine_in_orders[dine_in_orders_index]:
-            dine_in_orders +=1
+#         elif dine_in_orders_index <= dine_in_orders_max_index and order == dine_in_orders[dine_in_orders_index]:
+#             dine_in_orders +=1
             
-        else:
-            return False
+#         else:
+#             return False
             
-    if dine_in_orders_index != len(dine_in_orders) or take_out_orders_index != len(take_out_orders_index):
-        return False
+#     if dine_in_orders_index != len(dine_in_orders) or take_out_orders_index != len(take_out_orders_index):
+#         return False
         
-    return True 
+#     return True 
+
+    
+def can_two_movies_fill_flight(movie_lengths, flight_length):
+    movie_lengths_seen = set()
+    
+    for first_movie_length in movie_lengths:
+        matching_second_movie_length = flight_length - first_movie_length
+        if matching_second_movie_length in movie_lengths_seen:
+            return True
+        
+        movie_lengths_seen.add(first_movie_length)
+
+
+    return False
